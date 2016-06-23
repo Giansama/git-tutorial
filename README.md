@@ -4,7 +4,7 @@
 - - -
 
 - - -
-|	![foto de Gian](/códigos-fontes/readme/foto.png)| Sobre mim	|
+| ![foto de Gian](https://raw.githubusercontent.com/Giansama/git-tutorial/master/códigos-fontes/readme/foto.jpg) | Sobre mim	|
 |---|---|
 | Nome: | Gian Lucas Cavalcante de Lima |
 | Idade: | 21 anos (2016) |
