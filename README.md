@@ -4,7 +4,7 @@
 - - -
 
 - - -
-|	![foto de Gian](/códigos-fontes/readme/foto2.png)| Sobre mim	|
+|	![foto de Gian](/códigos-fontes/readme/foto.png)| Sobre mim	|
 |---|---|
 | Nome: | Gian Lucas Cavalcante de Lima |
 | Idade: | 21 anos (2016) |
