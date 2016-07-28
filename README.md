@@ -3,7 +3,6 @@
 
 - - -
 
-- - -
 | ![foto de Gian](https://raw.githubusercontent.com/Giansama/git-tutorial/master/códigos-fontes/readme/foto.jpg) | Sobre mim						 |
 |---		|---											|
 | Nome: 	| Gian Lucas Cavalcante de Lima					|
