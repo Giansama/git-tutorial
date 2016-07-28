@@ -106,10 +106,10 @@
 \subsection{Como funciona}
 % the license
 \begin{frame}{Introdução}{Como funciona}
-	\includegraphics[scale=0.75]{funcionamento.png}  
+	\includegraphics[scale=0.75]{AAUgraphics/funcionamento.png}  
 \end{frame}
 \begin{frame}{Introdução}{Como funciona}
-	\includegraphics[scale=0.17]{esquema2}  
+	\includegraphics[scale=0.17]{AAUgraphics/esquema2}  
 \end{frame}
 %%%%%%%%%%%%%%%%
 
@@ -144,30 +144,30 @@
 \end{frame}
 
 \begin{frame}{Começando a usar}{Instalando no Windows}
-  \includegraphics[scale=0.37]{download1}
+  \includegraphics[scale=0.37]{AAUgraphics/download1}
 \end{frame}
 \begin{frame}{Começando a usar}{Instalando no Windows}
-  \includegraphics[scale=0.32]{download2}
+  \includegraphics[scale=0.32]{AAUgraphics/download2}
 \end{frame}
 
 \subsection{Registro}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.42]{ssh1}
+  \includegraphics[scale=0.42]{AAUgraphics/ssh1}
 \end{frame}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.42]{ssh2}
+  \includegraphics[scale=0.42]{AAUgraphics/ssh2}
 \end{frame}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.42]{ssh3}
+  \includegraphics[scale=0.42]{AAUgraphics/ssh3}
 \end{frame}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.42]{ssh4}
+  \includegraphics[scale=0.42]{AAUgraphics/ssh4}
 \end{frame}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.37]{ssh5}
+  \includegraphics[scale=0.37]{AAUgraphics/ssh5}
 \end{frame}
 \begin{frame}{Começando a usar}{Registrando a máquina}
-  \includegraphics[scale=0.37]{ssh6}
+  \includegraphics[scale=0.37]{AAUgraphics/ssh6}
 \end{frame}
 
 \subsection{Clonando}
@@ -192,55 +192,82 @@
 		\item \$ git clone \textit{link do repositório}
 	\end{itemize}
 	\end{itemize}
-	\includegraphics[scale=0.38]{clone1}\\
+	\includegraphics[scale=0.38]{AAUgraphics/clone1}\\
 	
 \end{frame}
 
+\subsection{Branchs e Forks}
+\begin{frame}{Começando a usar}{Manipulando repositórios}
+\begin{block}{O que é uma Branch? E o que é um Fork?}
+  \begin{itemize}
+    \item<1-> Uma Branch é como o nome sugere um 'galho', criar um 'galho' do seu projeto significa ramificar o seu projeto e fazer trabalhos paralelos em cima do mesmo projeto sem que o desenvolvimento de um interfira noutro.\\
+    Ao criar uma Branch você criar uma versão paralela do seu projeto aonde você pode trabalhar em alguma alteração sem que isso comprometa a integridade dos arquivos principais. 
+    \item<1-> Enquanto um Fork é uma bifurcação do projeto, criar um fork significa levar o projeto para uma direção diferente da que ele esta seguindo agora.\\
+    Ao criar uma Fork o projeto é clonado integralmente para um novo repositório e sem qualquer ligação com o original.
+  \end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Começando a usar}{Criando uma Branch e Merge}
+A forma mais rápida de se criar uma branch é pelo comando:
+\begin{itemize}
+	\item \$ git checkout -b \textit{nome\_da\_branch}
+\end{itemize}
+Esse comando é na verdade uma simplificação de:
+\begin{itemize}
+	\item \$ git branch \textit{nome\_da\_branch}
+	\item \$ git checkout \textit{nome\_da\_branch}
+\end{itemize}
+\vspace{10px}
+\begin{itemize}
+	\item O comando checkout serve para alternar entre as branchs.\\
+	\item Para deletar uma branch criada você pode usar:
+	\begin{itemize}
+		\item {\small \$ git branch -D \textit{nome\_da\_branch}}
+	\end{itemize}
+	\item Para juntar um ramo a outro é usado o comando merge, estando no ramo que você quer que recebe um outro é só usar o comando:\\
+	\begin{itemize}
+		\item {\small \$ git merge \textit{nome\_da\_branch}}
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Começando a usar}{Criando um Fork}
+Na verdade o fork não é nada mais que um clone, só que ele é automaticamente rastreado pelo github.
+\includegraphics[scale=0.27]{AAUgraphics/fork}
+\end{frame}
 
 
 \section{Comandos}
 % general installation instructions
 \subsection{Principais comandos}
 \begin{frame}{Comandos}{Principais comandos}
-Todos os comandos devem ser iniciados com git + \textit{"parâmetro"}
-	\begin{itemize}
-	\item init
-		\begin{itemize}
-		\item
-		\end{itemize}			
-	\item add
-		\begin{itemize}
-		\item
-		\end{itemize}			
-	\item commit
-		\begin{itemize}
-		\item
-		\end{itemize}			
-	\item push
-		\begin{itemize}
-		\item
-		\end{itemize}			
+Comandos mais comumentes usados:
+	\begin{itemize}	
+	\item add			
+	\item commit			
+	\item push			
 	\item pull
-		\begin{itemize}
-		\item
-		\end{itemize}
 	\end{itemize}	
+\begin{flushright}
+{\footnotesize Todos os comandos devem ser iniciados com git + \textit{"comando"}}
+\end{flushright}
 \end{frame}
 
-\subsection{Principais comandos}
-\begin{frame}{Comandos}{Outros comandos}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{git \textit{comando}}\\
-		\hline
-		clone & \\
-		\hline		
-		add & \\
-		\hline	
-		commit & \\
-		\hline	
-	\end{tabular}
-\end{frame}
+%\subsection{Principais comandos}
+%\begin{frame}{Comandos}{Outros comandos}%
+%	\begin{tabular}{|c|c|}
+%		\hline
+%		\multicolumn{2}{|c|}{git \textit{comando}}\\
+%		\hline
+%		clone & \\
+%		\hline		
+%		add & \\
+%		\hline	
+%		commit & \\
+%		\hline	
+%	\end{tabular}
+%\end{frame}
 
 %\section{Considerações finais}
 %\subsection{Informações dos componentes}
